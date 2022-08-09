@@ -87,6 +87,8 @@ export const ExChgRate = () => {
 
   return (
     <div>
+      <h1>Andrew Wu 匯率轉換器</h1>
+      <h2>work by TS & create react app</h2>
       <h3>新增幣種</h3>
       <input
         type="text"
