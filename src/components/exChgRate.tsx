@@ -76,12 +76,12 @@ export const ExChgRate = () => {
   useEffect(() => {
     if (currentInput.crtWallet === INIT_WALLET) return;
 
-    const newMsg = 
-      `您用 ${currentInput.crtAmount} 元台幣，兌換了 ${
-        currentInput.crtAmount * currentInput.crtRate
-      } ${currentInput.crtChgName},帳戶餘額為 ${currentInput.crtWallet} 元`;
+    const newMsg = `您用 ${currentInput.crtAmount} 元台幣，兌換了 ${
+      currentInput.crtAmount * currentInput.crtRate
+    } ${currentInput.crtChgName},帳戶餘額為 ${currentInput.crtWallet} 元`;
     setRecords([...records, newMsg]);
-    setCurrentInput({...currentInput, crtAmount: 0});
+    setCurrentInput({ ...currentInput, crtAmount: 0 });
+    // eslint-disable-next-line
   }, [currentInput.crtWallet]);
 
 
